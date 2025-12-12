@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>BSCD - Bicol School for Children with Disabilities</title>
+    <style>
+        body{background-color: burlywood;}
+    </style>
+</head>
+<body>
+    <body class="blue-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="border-style:solid;  background-color:beige ;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: black; font-family:Georgia, 'Times New Roman', Times, serif;">BSCD - Bicol School for Children with Disabilities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gwa_calculator.html" style="color: black;">General Weighted Average Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schoolclubinfo.html" style="color: black;">School Club Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    
+    <div class="container" style="border-style: solid; border-radius: 12px; background-color: beige;">
+        <br>
+        <h1 class="mb-4 text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: peru">School Club Information</h1>
+        <h3 class="mb-4 text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: peru;">---------------------</h3>
+        <div class="mb-3">
+            <label for="address" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Select a club to browse:</label>
+            <br>
+            <select class="col-md-12" style="text-align: center;" id="select">
+                <option>Social Sciences Club</option>
+                <option>Journalism Club</option>
+                <option>Sports Varsity</option>
+                <option>STEM Club</option>
+            </select>
+        </div>
+        <div class="d-grid gap-2 col-md-6 mx-auto mt-4">
+            <button class="btn btn-warning btn-lg" type="submit" py-click="generate_info" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman'">Show Club Information</button>
+        </div>
+        <div class="order-container p-4">
+            <h3 class="mb-3" style="text-align: center; color: peru; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman'">Selected Club:</h3>
+            <div id="info" class="h5 mt-3" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></div>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+    
+    <center>
+        <a href="index.html">
+            <button class="back-btn">
+                <i class="fas fa-arrow-left me-2"></i>Back to Home
+            </button>
+        </a>
+    </center>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="main3.py"></script>
+
+</body>
+</html>

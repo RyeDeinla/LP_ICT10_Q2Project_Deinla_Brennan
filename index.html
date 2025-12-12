@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>BSCD - Bicol School for Children with Disabilities</title>
+    <style>
+        #name1{color: red;}   
+        body{background-color: burlywood;}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="border-style: solid; background-color: beige;">
+        <div class="container" >
+            <a class="navbar-brand" href="index.html" style="color: black; font-family:'Times New Roman', Times, serif;">BSCD - Bicol School for Children with Disabilities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gwa_calculator.html" style="color: black;">General Weighted Average Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schoolclubinfo.html" style="color: black;">School Club Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container" style="border-radius: 12px; border-style: solid;  background-color: beige;">
+        <br>
+        <div class="header text-center">
+            <div id="name1" class="display-4 fw-bold" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: peru"></div>
+            <div id="owner" class="fs-5 mt-2"></div>
+            <div id="since" class="fs-6"></div>
+        </div>
+
+        <br>
+        
+        <div class="menu-card" style="border-style: solid;">
+            <br>
+            <h3 style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Welcome! </h3>
+            <div class="p-5">
+            <img src="children.jpg" class="child-img" alt="Disabled child" height="850" width="1200" style="border: solid; border-radius: 12px;"> 
+            </div>
+            <h5 style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is the BSCD or the Bicol School for Children with Disabilities. It is our goal to provide quality education to persons with disabilities in the Bicol region (PWDs), ensuring that they learn in a conducive, efficient, and fun environment that helps them propagate their skills despite their struggles. With our meticulously crafted and curated classrooms and teaching areas along with our well-trained teachers, you have an educator's promise that here, no matter what you are experiencing, you will be loved and taught with passion and care. Photo Reference: https://www.savethechildren.org.ph/our-work/our-stories/story/watch-children-with-disability-are-just-like-any-other-child/  </h5>
+            <br>
+        </div>
+
+        <br>
+        
+        <div class="opening-hours p-2" style="background-color: peru; border-radius:12px; border-style: solid;">
+            <i class="fas fa-clock me-2" style="color: white;"></i>
+            <span id="openingHours" style="color: white;"></span>
+        </div>
+
+        <br>
+    
+    <script type="py" src="main.py"></script>
+</body>
+</html>

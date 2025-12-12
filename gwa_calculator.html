@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>BSCD - Bicol School for Children with Disabilities</title>
+    <style>
+        body{background-color: burlywood;}
+    </style>
+</head>
+<body class="blue-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="border-style:solid;  background-color:beige ;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: black; font-family:Georgia, 'Times New Roman', Times, serif;">BSCD - Bicol School for Children with Disabilities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gwa_calculator.html" style="color: black;">General Weighted Average Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schoolclubinfo.html" style="color: black;">School Club Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+    <br>
+                
+<div class="container" style="background-color: beige; border-style: solid; border-radius: 12px;">
+    <br>
+    <h1 class="mb-3" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: peru;">Student Details:</h1>
+    <div class="mb-3">
+        <label for="customer" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">First Name</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Last Name</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+    </div>
+    <p style="text-align: center;">-------</p>
+    <div class="mb-3">
+        <label for="customer" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Science</label>
+        <input type="number" class="form-control" id="science" placeholder="Enter your grade">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">English</label>
+        <input type="number" class="form-control" id="english" placeholder="Enter your grade">
+    </div>
+    <div class="mb-3">
+        <label for="customer" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ICT</label>
+        <input type="number" class="form-control" id="ict" placeholder="Enter your grade">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Math</label>
+        <input type="number" class="form-control" id="math" placeholder="Enter your grade">
+    </div>
+    <div class="mb-3">
+        <label for="customer" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Filipino</label>
+        <input type="number" class="form-control" id="filipino" placeholder="Enter your grade">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Physical Education (PE)</label>
+        <input type="number" class="form-control" id="physicaleducation" placeholder="Enter your grade">
+    </div>
+    <div class="d-grid gap-2 col-md-6 mx-auto mt-4">
+        <button class="btn btn-warning btn-lg" type="submit" py-click="general_weighted_average" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman'">Calculate your GWA</button>
+    </div>
+    <br>
+    <div class="order-container p-4">
+        <h3 class="mb-3" style="text-align: center; color: peru; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Final General Weighted Average for All Subjects:</h3>
+        <h5><div id="fullname" class="mb-2" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></div></h5>
+        <div id="gwa" class="h5 mt-3" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></div>
+    </div>
+</div>
+
+<br>
+
+<center>
+    <a href="index.html">
+        <button class="back-btn">
+            <i class="fas fa-arrow-left me-2"></i>Back to Home
+        </button>
+    </a>
+</center>
+
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="py" src="main2.py"></script>
+
+</body>
+</html>
